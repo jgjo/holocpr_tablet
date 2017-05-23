@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>CPRConduct</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/bootstrap-theme.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="stylesheets/custom.css">   
+</head>
+
+<body>
+<div class="container">
+	<div class="mainDiv">
+		<div id="task">
+				<br/>
+				<br/>
+				<span class="taskTitle">Give </span> <span class="taskTitle" style="color:red; font-size: 56px">30 </span> <span class=taskTitle> chest compressions</span>
+				<br/>
+				<br/>
+				<img src="images/step1.JPG" alt="Lorem Pixel image" class="taskImage img">
+				<br/>
+				<br/>
+				<p class="normalText">Push hard in the middle of the chest.</p>
+				<br/>
+				<br/>
+				<div id="button" style="text-align: center;">
+					<a href="/task2" class="taskButton">NEXT</a>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+<script src="javascripts/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+	function incrementCompressionCounter()
+	{
+		var count = sessionStorage.compressionCounter;
+		if(count==undefined)
+		{
+			count = 1;
+		}
+        sessionStorage.compressionCounter = parseInt(count)+1;
+	}
+
+
+	$(document).ready(function() {
+
+
+	});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+#task
+{
+	text-align: center;
+}
+
+.taskTitle
+{
+	font-size: 40px;
+}
+
+.normalText
+{
+	font-size: 20px;
+	text-align: center;
+}
+
+.taskButton
+{
+	font-size: 30px;
+	border-style: solid;
+	border-color: #4E9CAF;
+	color:white;
+	text-align: center;
+    background: #4E9CAF;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.taskImage
+{
+width:700px;
+height:500px;
+}
+
+.start
+{
+	font-size: 60px;
+	color:navy;
+	text-align: center;
+	width:30%;
+}
+
+.mainDiv
+{
+	/* Must manually set width/height */
+	 width:800px;
+	 height:100vh;
+	 /* The magic centering code */
+	 margin:auto;
+	 position:absolute;
+	 top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+	 left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+	 /* Prevent div from overflowing main window */
+	 max-width:100%;
+	 max-height:100%;
+	 overflow:auto;
+}
