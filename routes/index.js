@@ -21,6 +21,11 @@ router.get('/', function(req, res, next) {
   logger.info('Start page loaded');
 });
 
+router.get('/task', function(req, res, next) {
+  res.render('task', { title: 'CPRConduct' });
+  logger.info('task page loaded');
+});
+
 router.get('/task1', function(req, res, next) {
   res.render('task1', { title: 'CPRConduct' });
   logger.info('task1 loaded');

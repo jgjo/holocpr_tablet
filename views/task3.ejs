@@ -8,27 +8,52 @@
 
 	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 	<link href="stylesheets/bootstrap-theme.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="stylesheets/custom.css">     
+    <link rel="stylesheet" href="stylesheets/custom.css">   
 </head>
 
 <body>
-<div class="container">
-	<div class="mainDiv">
-		<div id="task">
-				<br/>
-				<br/>
-				<span class="taskTitle">Continue giving </span> <span class="taskTitle" style="color:red; font-size: 46px">30 </span> <span class=taskTitle> chest compressions and </span> 
-				<span class="taskTitle" style="color:red; font-size: 46px">2 </span> <span class=taskTitle> rescue breaths </span>
-				<span class="taskTitle" style="color:blue; font-size: 56px">3 </span> <span class=taskTitle> times.</span>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<div id="button" style="text-align: center;">
-					<a href="/" class="taskButton">Finish</a>
+<div class="container" style="text-align: center; padding-left: 70px; padding-right: 70px;">
+	<div class="row">
+				<div class="col-sm-12 col-md-12" id="task">
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+<!-- 						<span class="taskTitle">Give </span> <span class="taskTitle" style="color:red; font-size: 56px">2 </span> <span class=taskTitle> rescue breaths</span>
+						<br/>
+						<br/>
+						<img src="images/step2.JPG" alt="Lorem Pixel image" class="taskImage img">
+						<br/>
+						<br/>
+						<p class="normalText">Tilt the head back and lift the chin up.</p>				
+						<p class="normalText">Pinch the nose shut and blow into the persons mouth for 1 second.</p> -->
+						<br/>
+						<br/>
+						<br/>
+						<br/>
 				</div>
-		</div>
 	</div>
+	<div class="row">
+				
+	</div>
+	<div class="row">
+				<div class="col-sm-7 col-md-7" id="nexttaskleft">
+					<div>
+						<br/>
+						<span class="nexttaskTitle">Give 2 rescue breaths</span>
+						<br/>
+						<img src="images/step2.JPG" alt="Lorem Pixel image" class="nexttaskImage img">
+						<br/>
+					</div>
+				</div>
+				<div class="col-sm-5 col-md-5" id="nexttaskright">
+							<a href="/" class="taskButton">FINISH  &raquo;</a>
+				</div>
+	</div>
+
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -36,5 +61,26 @@
 <!-- Include all compiled plugins (blelow), or include individual files as needed -->
 <script src="javascripts/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+
+	function incrementCompressionCounter()
+	{
+		var count = sessionStorage.compressionCounter;
+		if(count==undefined)
+		{
+			count = 1;
+		}
+        sessionStorage.compressionCounter = parseInt(count)+1;
+	}
+
+
+	$(document).ready(function() {
+
+
+	});
+
+</script>
+
 </body>
 </html>
+

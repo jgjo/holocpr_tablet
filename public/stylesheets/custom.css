@@ -3,35 +3,77 @@
 	text-align: center;
 }
 
+#nexttask
+{
+	text-align: center;
+}
+
+#nexttaskleft
+{
+	text-align: right;
+    height:270px; 
+    background-color: #efefef;
+    padding-right: 40px;
+}
+
+#nexttaskright
+{
+	text-align: left;
+    text-align:center; 
+    background:#4E9CAF; 
+    /*width:285px; */
+    height:270px; 
+    font-size: 40px
+}
+
+#button
+{
+
+}
+
 .taskTitle
 {
 	font-size: 40px;
 }
 
+.nexttaskTitle
+{
+	font-size: 25px;
+}
+
 .normalText
 {
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
 }
 
 .taskButton
 {
-	font-size: 30px;
+	font-size: 50px;
 	border-style: solid;
 	border-color: #4E9CAF;
 	color:white;
 	text-align: center;
     background: #4E9CAF;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 0px;
     color: white;
     font-weight: bold;
+    width: 80px;
+    position: relative;
+  	top: 37%;
+  	transform: translateY(-60%);
 }
 
 .taskImage
 {
-width:700px;
+width:750px;
 height:500px;
+}
+
+.nexttaskImage
+{
+width:250px;
+height:180px;
 }
 
 .start
