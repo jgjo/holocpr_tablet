@@ -64,6 +64,19 @@
   	transform: translateY(-60%);
 }
 
+.finishbutton
+{
+	font-size: 50px;
+	border-style: solid;
+	border-color: #4E9CAF;
+	color:white;
+	text-align: center;
+    background: #4E9CAF;
+    padding: 0px;
+    color: white;
+    font-weight: bold;
+}
+
 .taskImage
 {
 width:650px;
