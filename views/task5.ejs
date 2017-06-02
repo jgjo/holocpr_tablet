@@ -17,26 +17,31 @@
 				<div class="col-sm-12 col-md-12" id="task">
 						<br/>
 						<br/>
-						<span class="taskTitle">Give </span> <span class="taskTitle" style="color:red; font-size: 56px">2 </span> <span class=taskTitle> rescue breaths</span>
+						<span class="taskTitle">Stand clear and deliver shock</span>
 						<br/>
 						<br/>
-						<img src="images/step2.JPG" alt="Lorem Pixel image" class="taskImage img">
+						<img src="images/step5.JPG" alt="Lorem Pixel image" class="taskImage img">
 						<br/>
 						<br/>
-						<p class="normalText">Blow twice into mouth for 1 second.</p>	
+						<p class="normalText">Press the white button.</p>
 						<br/>
 						<br/>
 						<br/>
 						<br/>
 				</div>
-	</div>
-	<div class="row">
-				
 	</div>
 	<div class="row">
 				<div class="col-sm-7 col-md-7" id="nexttaskleft">
+					<div>
+						<br/>
+						<span class="nexttaskTitle">Next Step: Give 30 chest compressions</span>
+						<br/>
+						<img src="images/step1.JPG" alt="Lorem Pixel image" class="nexttaskImage img">
+						<br/>
+					</div>
 				</div>
 				<div class="col-sm-5 col-md-5" id="nexttaskright">
+							<a href="/task1" class="taskButton">NEXT  &raquo;</a>
 				</div>
 	</div>
 
@@ -62,29 +67,6 @@
 
 	$(document).ready(function() {
 
-		var count = sessionStorage.compressionCounter;
-		if(count==undefined)
-		{
-			count = 1;
-		}
-
-		if(count == 1)
-		{
-			btndiv = document.getElementById("nexttaskright");
-			btndiv.innerHTML = "<a href=\"/task1\" class=\"taskButton\">NEXT  &raquo;</a>";
-
-			taskdiv = document.getElementById("nexttaskleft");
-			taskdiv.innerHTML = "<div> <br/> <span class=\"nexttaskTitle\">Next Step: Give 30 chest compressions</span> <br/> <img src=\"images/step1.JPG\" alt=\"Lorem Pixel image\" class=\"nexttaskImage img\"> <br/> </div>"
-		}
-		else
-		{
-			btndiv =document.getElementById("nexttaskright");
-			btndiv.innerHTML = "<a href=\"/task3\" class=\"taskButton\">NEXT  &raquo;</a>";
-			taskdiv = document.getElementById("nexttaskleft");
-			taskdiv.innerHTML = "<div> <br/> <span class=\"nexttaskTitle\">Next Step: Locate and bring AED</span> <br/> <img src=\"images/step3.JPG\" alt=\"Lorem Pixel image\" class=\"nexttaskImage img\"> <br/> </div>"
-		}
-
-        sessionStorage.compressionCounter = parseInt(count)+1;
 
 	});
 
@@ -92,4 +74,3 @@
 
 </body>
 </html>
-

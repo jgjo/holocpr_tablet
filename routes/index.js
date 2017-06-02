@@ -41,4 +41,14 @@ router.get('/task3', function(req, res, next) {
   logger.info('task3 loaded');
 });
 
+router.get('/task4', function(req, res, next) {
+  res.render('task4', { title: 'CPRConduct' });
+  logger.info('task4 loaded');
+});
+
+router.get('/task5', function(req, res, next) {
+  res.render('task5', { title: 'CPRConduct' });
+  logger.info('task5 loaded');
+});
+
 module.exports = router;
